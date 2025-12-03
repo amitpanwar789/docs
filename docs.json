@@ -57,16 +57,14 @@
             ]
           },
           {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
+            "group": "Petstore",
+            "openapi": "api-reference/petstore.json"
+          },
+          {
+            "group": "Travel API",
+            "openapi": "api-reference/traintravelapi.yaml"
           }
-        ],
-        "openapi": ["api-reference/petstore.json"]
+        ]
       }
     ]
   },  
