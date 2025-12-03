@@ -49,25 +49,30 @@
       },
       {
         "tab": "API reference",
-        "groups": [
+        "menu": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+            "item": "OpenAPI specifications",
+            "groups": [
+              {
+                "group": "API documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Petstore",
+                "openapi": "api-reference/petstore.json"
+              },
+              {
+                "group": "Travel API",
+                "openapi": "api-reference/traintravelapi.yaml"
+              }
             ]
-          },
-          {
-            "group": "Petstore",
-            "openapi": "api-reference/petstore.json"
-          },
-          {
-            "group": "Travel API",
-            "openapi": "api-reference/traintravelapi.yaml"
           }
         ]
       }
     ]
-  },  
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
