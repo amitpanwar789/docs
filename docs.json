@@ -60,10 +60,6 @@
                 ]
               },
               {
-                "group": "Petstore",
-                "openapi": "api-reference/petstore.json"
-              },
-              {
                 "group": "Travel API",
                 "openapi": "api-reference/traintravelapi.yaml"
               }
