@@ -51,7 +51,26 @@
         "tab": "API reference",
         "menu": [
           {
-            "item": "OpenAPI specifications",
+            "item": "version 1",
+            "groups": [
+              {
+                "group": "API documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Petstore",
+                "openapi": "api-reference/petstore.json"
+              },
+              {
+                "group": "Travel API",
+                "openapi": "api-reference/traintravelapi.yaml"
+              }
+            ]
+          },
+          {
+            "item": "version 2",
             "groups": [
               {
                 "group": "API documentation",
