@@ -64,24 +64,48 @@
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
+          },
+          {
+            "group": "Pet",
+            "openapi": "/api-reference/petstore.json",
+            "pages": [
+              "POST /pet",
+              "PUT /pet",
+              "GET /pet/findByStatus",
+              "GET /pet/findByTags",
+              "GET /pet/{petId}",
+              "POST /pet/{petId}",
+              "DELETE /pet/{petId}",
+              "POST /pet/{petId}/uploadImage"
+            ]
+          },
+          {
+            "group": "Store",
+            "openapi": "/api-reference/petstore.json",
+            "pages": [
+              "GET /store/inventory",
+              "POST /store/order",
+              "GET /store/order/{orderId}",
+              "DELETE /store/order/{orderId}"
+            ]
+          },
+          {
+            "group": "User",
+            "openapi": "/api-reference/petstore.json",
+            "pages": [
+              "POST /user",
+              "POST /user/createWithArray",
+              "POST /user/createWithList",
+              "GET /user/login",
+              "GET /user/logout",
+              "GET /user/{username}",
+              "PUT /user/{username}",
+              "DELETE /user/{username}"
+            ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -102,15 +126,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
