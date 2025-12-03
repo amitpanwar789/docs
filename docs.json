@@ -105,6 +105,86 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Instagram API",
+        "groups": [
+          {
+            "group": "Users",
+            "openapi": "api-reference/instagram.yaml",
+            "pages": [
+              "GET /users/search",
+              "GET /users/self/feed",
+              "GET /users/self/media/liked",
+              "GET /users/{user-id}",
+              "GET /users/{user-id}/media/recent"
+            ]
+          },
+          {
+            "group": "Relationships",
+            "openapi": "api-reference/instagram.yaml",
+            "pages": [
+              "GET /users/self/requested-by",
+              "GET /users/{user-id}/followed-by",
+              "GET /users/{user-id}/follows",
+              "GET /users/{user-id}/relationship",
+              "POST /users/{user-id}/relationship"
+            ]
+          },
+          {
+            "group": "Media",
+            "openapi": "api-reference/instagram.yaml",
+            "pages": [
+              "GET /media/popular",
+              "GET /media/search",
+              "GET /media/shortcode/{shortcode}",
+              "GET /media/{media-id}"
+            ]
+          },
+          {
+            "group": "Comments",
+            "openapi": "api-reference/instagram.yaml",
+            "pages": [
+              "GET /media/{media-id}/comments",
+              "POST /media/{media-id}/comments",
+              "DELETE /media/{media-id}/comments/{comment-id}"
+            ]
+          },
+          {
+            "group": "Likes",
+            "openapi": "api-reference/instagram.yaml",
+            "pages": [
+              "GET /media/{media-id}/likes",
+              "POST /media/{media-id}/likes",
+              "DELETE /media/{media-id}/likes"
+            ]
+          },
+          {
+            "group": "Tags",
+            "openapi": "api-reference/instagram.yaml",
+            "pages": [
+              "GET /tags/search",
+              "GET /tags/{tag-name}",
+              "GET /tags/{tag-name}/media/recent"
+            ]
+          },
+          {
+            "group": "Locations",
+            "openapi": "api-reference/instagram.yaml",
+            "pages": [
+              "GET /locations/search",
+              "GET /locations/{location-id}",
+              "GET /locations/{location-id}/media/recent"
+            ]
+          },
+          {
+            "group": "Geographies",
+            "openapi": "api-reference/instagram.yaml",
+            "pages": [
+              "GET /geographies/{geo-id}/media/recent"
+            ]
+          }
+        ]
       }
     ]
   },
