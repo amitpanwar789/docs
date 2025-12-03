@@ -64,16 +64,6 @@
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
-          },
-          {
-            "group": "Petstore v3",
-            "openapi": "api-reference/petstore.json",
-            "pages": [
-              "GET /pets",
-              "POST /pets",
-              "GET /pets/{id}",
-              "DELETE /pets/{id}"
-            ]
           }
         ],
         "openapi": ["api-reference/petstore.json"]
