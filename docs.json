@@ -68,7 +68,7 @@
           },
           {
             "group": "Pet",
-            "openapi": "/api-reference/petstore.json",
+            "openapi": "api-reference/petstore.json",
             "pages": [
               "POST /pet",
               "PUT /pet",
@@ -82,7 +82,7 @@
           },
           {
             "group": "Store",
-            "openapi": "/api-reference/petstore.json",
+            "openapi": "api-reference/petstore.json",
             "pages": [
               "GET /store/inventory",
               "POST /store/order",
@@ -92,7 +92,7 @@
           },
           {
             "group": "User",
-            "openapi": "/api-reference/petstore.json",
+            "openapi": "api-reference/petstore.json",
             "pages": [
               "POST /user",
               "POST /user/createWithArray",
