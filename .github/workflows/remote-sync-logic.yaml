@@ -57,7 +57,7 @@ jobs:
           git add .
 
           if [ -z "${{ inputs.reason }}" ]; then
-            COMMIT_MSG="Sync: ${{ inputs.service_name }} updated - PR: ${{ inputs.pr_id }}"
+            COMMIT_MSG="Sync: ${{ inputs.service_name }} updated - Manually Trigger Reason: ${{ inputs.reason }}"
           else
             cd ../service-repo
             PR_NUMBER=$(git log -1 --pretty=%B | grep -oP '(?<=#)\d+' | head -1 || echo "direct-push")
