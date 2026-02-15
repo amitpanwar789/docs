@@ -37,7 +37,7 @@ jobs:
       - name: Sync and Push
         run: |
           mkdir -p central-repo/api-reference/specs
-          cp service-repo/api/sidebars.yaml central-repo/api-reference/specs/${{ inputs.service_name }}.yaml
+          cp service-repo/api/sidebars.yaml central-repo/api-reference/specs/abdsagds.yaml
           
           cd central-repo
           git config user.name "API Bot"
