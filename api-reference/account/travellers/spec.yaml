@@ -1,7 +1,7 @@
 - group: Flight  safs
   page: /index.md
   items:
-    - group: kkk dfdf  nnnn
+    - group: kkk dfdf 
       directory: /locations
     - group: Flights Sales
       directory: /flights-sales
