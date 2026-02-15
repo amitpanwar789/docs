@@ -59,7 +59,10 @@ jobs:
           if [ -z "${{ inputs.reason }}" ]; then
             COMMIT_MSG="Sync: ${{ inputs.service_name }} updated - PR: ${{ inputs.pr_id }}"
           else
-            COMMIT_MSG="Sync: ${{ inputs.service_name }} updated - Reason: ${{ inputs.reason }}"
+            cd ../service-repo
+            PR_NUMBER=$(git log -1 --pretty=%B | grep -oP '(?<=#)\d+' | head -1 || echo "direct-push")
+            cd ../central-repo
+            COMMIT_MSG="Sync: ${{ inputs.service_name }} | Source PR: #$PR_NUMBER | SHA: ${GITHUB_SHA::7}""
           fi
 
           if git diff --cached --quiet; then
