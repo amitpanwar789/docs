@@ -1,0 +1,36 @@
+name: Master API Lint
+on:
+  workflow_call:
+    secrets:
+      APP_ID:
+        required: true
+      APP_PRIVATE_KEY:
+        required: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Token
+        id: generate_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout Central Repo (for config)
+        uses: actions/checkout@v4
+        with:
+          repository: amitpanwar789/docs
+          token: ${{ steps.generate_token.outputs.token }}
+          path: central-docs
+
+      - name: Checkout Service Repo (for OpenAPI)
+        uses: actions/checkout@v4
+        with:
+          path: service-repo
+
+      - name: Run Redocly Lint
+        run: |
+          npx @redocly/cli@latest lint service-repo/api/openapi.yaml \
+            --config=central-docs/custom-rule.yaml
