@@ -1,9 +1,9 @@
 openapi: 3.0.3
 info:
-  title: Location Sersssvice APIs
+  title: Location Service APIs
   version: 1.0.0
   description: >
-    Provides endpoints for search suggestions (autocomplete) and location resolution.
+    Provides endpoints for search suggesestions (autocompmmlete) and location resolution.
     Designed for extensibility to support airports, cities, hotels, cabs, trains.
 
   contact:
